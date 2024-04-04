@@ -19,5 +19,12 @@
       </div>
     </div>
 
+    <hr>
+    <hr>
+    <app-daughter 
+      [counter]="counter"
+      (counterChanged)="counter = $event">
+    </app-daughter>
+
   </div>
 </div>
