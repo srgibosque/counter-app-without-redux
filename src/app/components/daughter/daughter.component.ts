@@ -17,4 +17,9 @@ export class DaughterComponent implements OnInit {
     this.counter = this.counter * 2;
     this.counterChanged.emit(this.counter);
   }
+
+  resetGrandDaughter(newCounter: number): void{
+    this.counter = newCounter;
+    this.counterChanged.emit(this.counter);
+  }
 }

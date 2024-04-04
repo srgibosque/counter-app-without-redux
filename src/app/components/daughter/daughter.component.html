@@ -10,3 +10,10 @@
     <button class="btn btn-warning btn-lg" type="button" (click)="duplicate()">Duplicate (* 2)</button>
   </div>
 </div>
+
+<hr>
+<hr>
+<app-granddaughter 
+  [counter]="counter"
+  (counterChanged) = "resetGrandDaughter($event)">
+</app-granddaughter>
